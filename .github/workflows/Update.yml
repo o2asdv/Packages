@@ -54,9 +54,9 @@ jobs:
         rm -rf ./op-socat/socat
         rm -rf ./op-mosdns
         rm -rf ./patch/wall
-        rm -rf ./luci-app-pushbot
-        rm -rf ./luci-app-cloudflared
+        rm -rf ./patch/luci-wall
         rm -rf ./patch/redsocks2
+        rm -rf ./luci-app-cloudflared
         
  
         git clone https://github.com/zzsj0928/luci-app-pushbot ./luci-app-pushbot
