@@ -5,7 +5,7 @@ RES='\e[0m'
 
 # OpenWrt Info
 version=$(cat /etc/os-release | grep VERSION_ID | awk -F "[\"\"]" '{print $2}' | awk -F. '{print $1}')
-platform=$(opkg print-architecture | awk 'END {print}' | awk '{print $2}')
+platform=$(opkg print-architecture | awk 'END{print $2}')
 
 # TMP
 TMPDIR=$(mktemp -d) || exit 1
@@ -23,8 +23,8 @@ fi
 # Check
 CHECK() (
 	echo -e "\r\n${GREEN_COLOR}Checking available space  ...${RES}"
-	ROOT_SPACE=$(df /usr | awk 'END {print}' | awk '{print $4}')
-	if [ $ROOT_SPACE -lt 40960 ]; then
+	ROOT_SPACE=$(df -m /usr | awk 'END{print $4}')
+	if [ $ROOT_SPACE -lt 40 ]; then
 		echo -e "${RED_COLOR}Error, The system storage space is less than 40MB.${RES}"
 		exit 1;
 	fi
