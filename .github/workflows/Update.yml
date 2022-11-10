@@ -82,7 +82,6 @@ jobs:
         git clone https://github.com/jerrykuku/luci-theme-argon ./jerrykuku/luci-theme-argon
         git clone https://github.com/jerrykuku/luci-theme-argon -b 18.06 ./jerrykuku/luci-theme-argon-18.06
         git clone https://github.com/jerrykuku/luci-app-argon-config ./jerrykuku/luci-app-argon-config
-#        git clone https://github.com/khongpt/luci-app-cloudflared ./luci-app-cloudflared
 
         git clone https://github.com/destan19/OpenAppFilter ./op-oaf
                              
