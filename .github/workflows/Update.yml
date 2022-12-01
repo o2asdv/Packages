@@ -57,6 +57,7 @@ jobs:
         rm -rf ./patch/luci-wall
         rm -rf ./patch/redsocks
         rm -rf ./luci-app-cloudflared
+        rm -rf ./patch/luci-wall/luci-app-ssr-plus
         
  
         git clone https://github.com/zzsj0928/luci-app-pushbot ./luci-app-pushbot
