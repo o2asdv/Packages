@@ -102,7 +102,7 @@ jobs:
         rm -rf ./patch/wall/.github
         svn export https://github.com/coolsnowwolf/packages/trunk/net/redsocks ./patch/redsocks
         svn export https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall ./patch/luci-wall/luci-app-passwall
-        svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus ./patch/luci-wall/luci-app-ssr-plus
+        #svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus ./patch/luci-wall/luci-app-ssr-plus
         #svn export https://github.com/kiddin9/openwrt-bypass/trunk/luci-app-bypass ./patch/luci-wall/luci-app-bypass
         svn checkout https://github.com/vernesong/OpenClash/branches/dev/luci-app-openclash ./patch/luci-wall/luci-app-openclash
         
