@@ -89,7 +89,7 @@ jobs:
         svn export https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom ./theme-18.06/luci-theme-infinityfreedom
         git clone https://github.com/kiddin9/luci-theme-edge -b 18.06 ./theme-18.06/luci-theme-edge 
         git clone https://github.com/xiangfeidexiaohuo/luci-theme-neobird ./theme-18.06/luci-theme-neobird
-        #git clone https://github.com/grayearth/luci-app-cloudflared ./luci-app-cloudflared
+        git clone https://github.com/4ks-devops/luci-app-cloudflared ./luci-app-cloudflared
                          
         svn export https://github.com/kiddin9/openwrt-packages/trunk/filebrowser ./op-fileBrowser/filebrowser
         svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-filebrowser ./op-fileBrowser/luci-app-filebrowser
