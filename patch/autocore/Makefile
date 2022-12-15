@@ -41,30 +41,30 @@ endef
 define Build/Compile
 endef
 
-# define Package/autocore-arm/install
-# 	$(INSTALL_DIR) $(1)/etc
-# 	$(INSTALL_DATA) ./files/arm/index.htm $(1)/etc/
-# 	$(INSTALL_DIR) $(1)/etc/uci-defaults
-# 	$(INSTALL_BIN) ./files/arm/090-cover-index_htm $(1)/etc/uci-defaults/
-# 	$(INSTALL_DIR) $(1)/sbin
-# 	$(INSTALL_BIN) ./files/generic/cntime $(1)/sbin/
-# 	$(INSTALL_BIN) ./files/generic/cpuinfo $(1)/sbin/
-# 	$(INSTALL_BIN) ./files/generic/ethinfo $(1)/sbin/
-# 	$(INSTALL_BIN) ./files/arm/tempinfo $(1)/sbin/
-# endef
-# 
-# define Package/autocore-x86/install
-# 	$(INSTALL_DIR) $(1)/etc/init.d
-# 	$(INSTALL_BIN) ./files/x86/autocore $(1)/etc/init.d/
-# 	$(INSTALL_DIR) $(1)/etc
-# 	$(INSTALL_DATA) ./files/x86/index.htm $(1)/etc/index.htm
-# 	$(INSTALL_DIR) $(1)/sbin
-# 	$(INSTALL_BIN) ./files/generic/cntime $(1)/sbin/
-# 	$(INSTALL_BIN) ./files/generic/cpuinfo $(1)/sbin/
-# 	$(INSTALL_BIN) ./files/generic/ethinfo $(1)/sbin/
-# 	$(INSTALL_BIN) ./files/x86/tempinfo $(1)/sbin/
-# 	$(INSTALL_BIN) ./files/x86/tempinfo_pve $(1)/sbin/
-# endef
+define Package/autocore-arm/install
+	# $(INSTALL_DIR) $(1)/etc
+	# $(INSTALL_DATA) ./files/arm/index.htm $(1)/etc/
+	# $(INSTALL_DIR) $(1)/etc/uci-defaults
+	# $(INSTALL_BIN) ./files/arm/090-cover-index_htm $(1)/etc/uci-defaults/
+	# $(INSTALL_DIR) $(1)/sbin
+	# $(INSTALL_BIN) ./files/generic/cntime $(1)/sbin/
+	# $(INSTALL_BIN) ./files/generic/cpuinfo $(1)/sbin/
+	# $(INSTALL_BIN) ./files/generic/ethinfo $(1)/sbin/
+	# $(INSTALL_BIN) ./files/arm/tempinfo $(1)/sbin/
+endef
+
+define Package/autocore-x86/install
+	# $(INSTALL_DIR) $(1)/etc/init.d
+	# $(INSTALL_BIN) ./files/x86/autocore $(1)/etc/init.d/
+	# $(INSTALL_DIR) $(1)/etc
+	# $(INSTALL_DATA) ./files/x86/index.htm $(1)/etc/index.htm
+	# $(INSTALL_DIR) $(1)/sbin
+	# $(INSTALL_BIN) ./files/generic/cntime $(1)/sbin/
+	# $(INSTALL_BIN) ./files/generic/cpuinfo $(1)/sbin/
+	# $(INSTALL_BIN) ./files/generic/ethinfo $(1)/sbin/
+	# $(INSTALL_BIN) ./files/x86/tempinfo $(1)/sbin/
+	# $(INSTALL_BIN) ./files/x86/tempinfo_pve $(1)/sbin/
+endef
 
 $(eval $(call BuildPackage,autocore-arm))
 $(eval $(call BuildPackage,autocore-x86))
